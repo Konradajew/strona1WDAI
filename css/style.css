@@ -21,6 +21,7 @@ footer {
 
 h1, h2, h3 {
     color: #8B0000;
+    text-align: center;
 }
 
 a, .btn {
@@ -33,65 +34,52 @@ a:hover, .btn:hover {
 }
 
 .home-page {
-  position: relative; /* Umożliwia pozycjonowanie nakładki wewnątrz sekcji */
-  background-image: url('tlo.jpg'); /* Tło sekcji */
-  background-size: cover; /* Dopasowuje obrazek do całej sekcji */
-  background-position: center; /* Ustala pozycję obrazu */
-  width: 100%; /* Cała szerokość sekcji */
-  overflow: hidden; /* Ukrycie nadmiaru zawartości, która wykracza poza sekcję */
-  box-sizing: border-box; /* Wlicza padding do rozmiaru sekcji */
+  position: relative;
+  background-image: url('tlo.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .nakladka {
-  position: relative; /* Umożliwia rozszerzanie nakładki w zależności od tekstu */
-  left: 50%; /* Pozycjonowanie nakładki na środku */
-  transform: translateX(-50%); /* Przesunięcie nakładki o połowę jej szerokości, by była wyśrodkowana */
-  width: 50%; /* Nakładka zajmuje 50% szerokości sekcji */
-  background-position: center; /* Ustala pozycję obrazu wewnątrz nakładki */
-  background-attachment: fixed; /* Tło nakładki może być przypięte, by nie przewijało się przy scrollowaniu */
-  background-repeat: no-repeat; /* Unika powtarzania tła */
-  background-color: rgba(0, 0, 0, 0.75); /* Nakładka z przezroczystością */
-  color: white; /* Kolor tekstu */
-  padding: 20px; /* Dodatkowe odstępy wewnętrzne */
-  box-sizing: border-box; /* Zapewnia, że padding nie wykracza poza szerokość nakładki */
-  text-align: center; /* Wyśrodkowanie tekstu */
-  display: block; /* Zmiana z flex na block */
-  line-height: 1.6; /* Zwiększenie wysokości linii, aby poprawić czytelność */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  display: block;
+  line-height: 1.6;
 }
 
 .nakladka-tekst {
   color: red;
 }
 
-.button-special {
-    background-color: #DAA520;
-    color: #1C1C1C;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-}
-
-.button-special:hover {
-    background-color: #FFD700;
-    color: #8B0000;
-}
-
 .menu {
     display: flex;
-    flex-wrap: wrap; /* Pozwala linkom przełamywać się do nowej linii */
-    justify-content: space-around; /* Równomierne rozłożenie linków */
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: #333;
 }
 
 .menu a {
-    flex: 1 1 auto; /* Elementy zajmują równą przestrzeń i dostosowują swoją szerokość */
+    flex: 1 1 auto;
     color: white;
     text-decoration: none;
     font-size: 18px;
     text-align: center;
     padding: 20px 0;
     transition: background-color 0.3s;
-    min-width: 120px; /* Minimalna szerokość, aby zapewnić czytelność */
+    min-width: 120px;
 }
 
 .menu a:hover {
@@ -100,35 +88,33 @@ a:hover, .btn:hover {
 }
 
 .bosses {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
-    margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 40px;
 }
 
 .boss {
     background-color: #2b2b2b;
     padding: 20px;
     border-radius: 8px;
-    width: 30%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .boss h2 {
-    color: #cc0000; /* Czerwony kolor dla tytułów */
+    color: #cc0000;
 }
 
 .boss p {
     font-size: 1.1em;
 }
 
-.main-title {
-    font-size: 3em;
-    color: #ffcc00; /* Złoty kolor dla tytułu */
-}
 
-/* Sekcja z przedmiotami */
 .items-section {
     display: flex;
     flex-wrap: wrap;
@@ -152,8 +138,8 @@ a:hover, .btn:hover {
 }
 
 .item-image {
-    height: 100%;  /* Dopasowuje obrazek do wysokości kontenera */
-    width: auto;   /* Zachowuje proporcje obrazu */
+    height: 100%;
+    width: auto;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -163,23 +149,22 @@ a:hover, .btn:hover {
 }
 
 .item-title {
-    color: #ffcc00; /* Złoty kolor dla tytułów przedmiotów */
+    color: #ffcc00;
     margin-bottom: 10px;
 }
 
 .item-description p {
     font-size: 1.1em;
-    color: #ffff00; /* Żółty kolor tekstu dla opisów przedmiotów */
+    color: #ffff00;
 }
 
-/* Sekcja z obrazami */
 .images-section {
     text-align: center;
     margin-bottom: 40px;
 }
 
 .images-title {
-    color: #ffcc00; /* Złoty kolor dla tytułu obrazów */
+    color: #ffcc00;
     margin-bottom: 20px;
 }
 
@@ -195,21 +180,9 @@ a:hover, .btn:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
-/* Stopka */
-.main-footer {
-    text-align: center;
-    background-color: #2b2b2b;
-    padding: 10px;
-    color: #f5f5f5;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Sekcja formularza kontaktowego */
 .contact-form-section {
     background-color: #2b2b2b;
-    padding: 30px;
+    padding: 50px 0 220px 0;
     border-radius: 8px;
     max-width: 600px;
     flex-grow: 1;
@@ -227,7 +200,7 @@ a:hover, .btn:hover {
 
 label {
     font-size: 1.1em;
-    color: #ffcc00; /* Złoty kolor dla etykiet */
+    color: #ffcc00;
     margin-bottom: 8px;
     display: block;
 }
@@ -244,7 +217,7 @@ input[type="text"], select, textarea {
 }
 
 input[type="text"]:focus, select:focus, textarea:focus {
-    outline-color: #ffcc00; /* Złota obramówka przy focusu */
+    outline-color: #ffcc00;
 }
 
 textarea {
@@ -254,7 +227,7 @@ textarea {
 
 input[type="submit"] {
     padding: 12px;
-    background-color: #ffcc00; /* Złoty kolor przycisku */
+    background-color: #ffcc00;
     color: #333;
     border: none;
     border-radius: 5px;
@@ -264,9 +237,54 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #e6b800; /* Mniejszy odcień złotego przy hover */
+    background-color: #e6b800;
 }
 
 input[type="submit"]:active {
-    background-color: #cc9900; /* Jeszcze ciemniejszy odcień przy kliknięciu */
+    background-color: #cc9900;
+}
+
+.play-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #555;
+}
+
+.media {
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.media-video {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.media-images {
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.media-image {
+    height: 40%;
+    width: 40%;
 }
