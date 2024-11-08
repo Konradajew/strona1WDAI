@@ -56,8 +56,12 @@
 
 
     <script>
-    function preventFormSubmission(event) {
+    function resetFormFields(event) {
         event.preventDefault();
+        document.getElementById("email").value = "";
+        document.getElementById("subject").selectedIndex = 0;
+        document.getElementById("message").value = "";
+        alert("Formularz został zresetowany.");
     }
     </script>
 
