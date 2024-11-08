@@ -19,7 +19,6 @@
         </nav>
     </header>
 
-    <!-- Sekcja formularza kontaktowego -->
     <section class="contact-form-section">
         <form action="#" method="POST" class="contact-form">
             <div class="form-group">
@@ -30,8 +29,9 @@
             <div class="form-group">
                 <label for="subject">Temat wiadomości:</label>
                 <select id="subject" name="subject" required>
-                    <option value="question">Pytanie</option>
-                    <option value="feedback">Opinie</option>
+                    <option value="question">Zapytanie</option>
+                    <option value="feedback">Opinia</option>
+                    <option value="other">Wsparcie Strony</option>
                     <option value="other">Inne</option>
                 </select>
             </div>
@@ -56,7 +56,9 @@
 
 
     <script>
-
+    function preventFormSubmission(event) {
+        event.preventDefault();
+    }
     </script>
 
 </body>
