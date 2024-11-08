@@ -20,7 +20,7 @@
     </header>
 
     <section class="contact-form-section">
-        <form action="#" method="POST" class="contact-form">
+        <form class="contact-form">
             <div class="form-group">
                 <label for="email">E-Mail:</label>
                 <input type="text" id="email" name="email" placeholder="Wpisz swój e-mail" required>
@@ -55,15 +55,7 @@
     </footer>
 
 
-    <script>
-    function resetFormFields(event) {
-        event.preventDefault();
-        document.getElementById("email").value = "";
-        document.getElementById("subject").selectedIndex = 0;
-        document.getElementById("message").value = "";
-        alert("Formularz został zresetowany.");
-    }
-    </script>
+    
 
 </body>
 </html>
