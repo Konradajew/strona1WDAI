@@ -1,0 +1,272 @@
+body {
+    background-color: #2B2B2B;
+    color: #E0E0E0;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: #1C1C1C;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+footer {
+  padding: 20px 0px;
+  margin-top: auto;
+}
+
+
+h1, h2, h3 {
+    color: #8B0000;
+}
+
+a, .btn {
+    color: #4169E1;
+    text-decoration: none;
+}
+
+a:hover, .btn:hover {
+    color: #FFD700;
+}
+
+.home-page {
+  position: relative; /* Umożliwia pozycjonowanie nakładki wewnątrz sekcji */
+  background-image: url('tlo.jpg'); /* Tło sekcji */
+  background-size: cover; /* Dopasowuje obrazek do całej sekcji */
+  background-position: center; /* Ustala pozycję obrazu */
+  width: 100%; /* Cała szerokość sekcji */
+  overflow: hidden; /* Ukrycie nadmiaru zawartości, która wykracza poza sekcję */
+  box-sizing: border-box; /* Wlicza padding do rozmiaru sekcji */
+}
+
+.nakladka {
+  position: relative; /* Umożliwia rozszerzanie nakładki w zależności od tekstu */
+  left: 50%; /* Pozycjonowanie nakładki na środku */
+  transform: translateX(-50%); /* Przesunięcie nakładki o połowę jej szerokości, by była wyśrodkowana */
+  width: 50%; /* Nakładka zajmuje 50% szerokości sekcji */
+  background-position: center; /* Ustala pozycję obrazu wewnątrz nakładki */
+  background-attachment: fixed; /* Tło nakładki może być przypięte, by nie przewijało się przy scrollowaniu */
+  background-repeat: no-repeat; /* Unika powtarzania tła */
+  background-color: rgba(0, 0, 0, 0.75); /* Nakładka z przezroczystością */
+  color: white; /* Kolor tekstu */
+  padding: 20px; /* Dodatkowe odstępy wewnętrzne */
+  box-sizing: border-box; /* Zapewnia, że padding nie wykracza poza szerokość nakładki */
+  text-align: center; /* Wyśrodkowanie tekstu */
+  display: block; /* Zmiana z flex na block */
+  line-height: 1.6; /* Zwiększenie wysokości linii, aby poprawić czytelność */
+}
+
+.nakladka-tekst {
+  color: red;
+}
+
+.button-special {
+    background-color: #DAA520;
+    color: #1C1C1C;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-special:hover {
+    background-color: #FFD700;
+    color: #8B0000;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap; /* Pozwala linkom przełamywać się do nowej linii */
+    justify-content: space-around; /* Równomierne rozłożenie linków */
+    background-color: #333;
+}
+
+.menu a {
+    flex: 1 1 auto; /* Elementy zajmują równą przestrzeń i dostosowują swoją szerokość */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0;
+    transition: background-color 0.3s;
+    min-width: 120px; /* Minimalna szerokość, aby zapewnić czytelność */
+}
+
+.menu a:hover {
+    background-color: #555;
+    color: red
+}
+
+.bosses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.boss {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.boss h2 {
+    color: #cc0000; /* Czerwony kolor dla tytułów */
+}
+
+.boss p {
+    font-size: 1.1em;
+}
+
+.main-title {
+    font-size: 3em;
+    color: #ffcc00; /* Złoty kolor dla tytułu */
+}
+
+/* Sekcja z przedmiotami */
+.items-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.item {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.item-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-image {
+    height: 100%;  /* Dopasowuje obrazek do wysokości kontenera */
+    width: auto;   /* Zachowuje proporcje obrazu */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-description {
+    flex: 1;
+}
+
+.item-title {
+    color: #ffcc00; /* Złoty kolor dla tytułów przedmiotów */
+    margin-bottom: 10px;
+}
+
+.item-description p {
+    font-size: 1.1em;
+    color: #ffff00; /* Żółty kolor tekstu dla opisów przedmiotów */
+}
+
+/* Sekcja z obrazami */
+.images-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.images-title {
+    color: #ffcc00; /* Złoty kolor dla tytułu obrazów */
+    margin-bottom: 20px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Stopka */
+.main-footer {
+    text-align: center;
+    background-color: #2b2b2b;
+    padding: 10px;
+    color: #f5f5f5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Sekcja formularza kontaktowego */
+.contact-form-section {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1em;
+    color: #ffcc00; /* Złoty kolor dla etykiet */
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+    outline-color: #ffcc00; /* Złota obramówka przy focusu */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+input[type="submit"] {
+    padding: 12px;
+    background-color: #ffcc00; /* Złoty kolor przycisku */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e6b800; /* Mniejszy odcień złotego przy hover */
+}
+
+input[type="submit"]:active {
+    background-color: #cc9900; /* Jeszcze ciemniejszy odcień przy kliknięciu */
+}
